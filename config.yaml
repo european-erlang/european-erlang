@@ -1,0 +1,160 @@
+baseURL: "http://european-erlang.community/"
+languageCode: "en-us"
+title: "European Erlang Community"
+theme: hugo-fresh
+
+disableKinds:
+- taxonomy
+- taxonomyTerm
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  openGraph: true
+  description: "European Erlang is a free and open organization"
+  navbarlogo:
+    image: "logos/fresh.svg"
+    link: "/"
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    title: "European Erlang Community"
+    subtitle: "Share your knowledge with other"
+    buttontext: "Get started"
+    buttonlink: "#"
+    image: illustrations/worker.svg
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
+  navbar:
+  - title: About
+    url: /
+  - title: Statutes
+    url: /
+  - title: Services
+    sublinks:
+    - title: Directory
+      url: /
+    - title: Consulting
+      url: /
+    - title: Mentoring
+      url: /
+    - title: Meetup
+      url: /
+  - title: Contact us
+    url: /
+    button: true
+    
+  section1:
+    title: "An Open Erlang Community"
+    subtitle: "for everyone"
+    tiles:
+    - title: "Directory"
+      icon: mouse-globe
+      text: "A place to meet people and make business."
+      url: /
+      buttonText: "Access it"
+    - title: "Consulting"
+      icon: laptop-cloud
+      text: "A place to help you and your projects."
+      url: /
+      buttonText: "Ask us"
+    - title: "Mentoring"
+      icon: plug-cloud
+      text: "A place to be safe and share your ideas."
+      url: /
+      buttonText: "Engage"
+      
+  section2:
+    title: "You're here because you want the best"
+    subtitle: "And we know it"
+    features:
+    - title: Powerful and unified interface
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Cross-device synchronisation
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: doc-sync
+    - title: Nomad system
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: mobile-feed
+      
+  section4:
+    title: Our Clients love us!
+    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    clients:
+    - name: Irma Walters
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: Accountant
+      img: 1
+    - name: John Bradley
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: Financial Analyst
+      img: 2
+    - name: Gary Blackman
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: HR Manager
+      img: 3
+
+  # add automatically a form, don't know how.
+  # section5: true
+  
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/lucperkins/github-fresh
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://dribbble.com/#
+      icon: dribbble
+    - link: https://facebook.com/#
+      icon: facebook
+    - link: https://twitter.com/lucperkins
+      icon: twitter
+    - link: https://bitbucket.org/#
+      icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: AGB
+          link: /agb
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
